@@ -61,13 +61,6 @@ def tilt_field(f, cmd):
         if cmd=="d": liste=sert(f2,liste, r=[n], reverse = True)
     return f2
 
-def max_tile(f):
-    m = 0
-    for row in f:
-        for ele in row:
-            if ele > m:
-                m = ele
-
 
 def pprint(f):
     for row in f:
@@ -93,4 +86,4 @@ while not (f==tilt_field(f,"w")==tilt_field(f,"a")
         print("you win")
         sys.exit(1)
 pprint(f)
-print("you lose")
+print("I made a change here for the project")
